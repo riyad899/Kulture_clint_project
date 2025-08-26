@@ -47,7 +47,7 @@ const RecentHighlights = () => {
       location: 'Kuwait',
       date: '2025',
       category: 'Theatre',
-      image: zargoon,
+      image: "https://i.postimg.cc/gkBGzmhL/IMG-20250822-WA0016.jpg",
       icon: Theater,
       gradient: 'from-purple-500 to-pink-600',
       featured: true
@@ -353,30 +353,7 @@ const RecentHighlights = () => {
         </div>
 
         {/* Summary Section */}
-        <div className={`mt-20 text-center transition-all duration-1000 delay-900 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}>
-          <div className="relative max-w-4xl mx-auto">
-            <div className="absolute -inset-6 bg-gradient-to-br from-black/80 via-gray-900/60 to-black/80 backdrop-blur-sm rounded-3xl border border-yellow-400/20"></div>
-            <div className="relative p-8 md:p-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Creating <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                  Cultural Moments
-                </span>
-              </h3>
-              <p className="text-lg md:text-xl text-gray-200 leading-relaxed mb-6">
-                From sporting spectacles to artistic theatres, from music festivals to cultural celebrations—
-                each performance represents our commitment to bringing movement, emotion, and storytelling
-                together in unforgettable ways.
-              </p>
-              <div className="flex items-center justify-center space-x-4">
-                <div className="w-12 h-1 bg-gradient-to-r from-yellow-400 to-orange-500"></div>
-                <span className="text-yellow-400 font-semibold tracking-wider">RECENT • HIGHLIGHTS • KULTURE TRIBE</span>
-                <div className="w-12 h-1 bg-gradient-to-r from-orange-500 to-yellow-400"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+   
       </div>
 
       <style jsx>{`

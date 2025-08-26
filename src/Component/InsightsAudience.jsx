@@ -26,8 +26,8 @@ const InsightsAudience = () => {
       icon: Users,
       label: 'Accounts Reached',
       value: '3.2M+',
-      change: '-57.7%',
-      positive: false,
+      change: '+57.7%',
+      positive: true,
       description: 'Unique accounts'
     },
     {
@@ -50,8 +50,8 @@ const InsightsAudience = () => {
 
   // Geographic data
   const geographicData = [
-    { country: 'India', percentage: 43.0, color: '#F59E0B' },
-    { country: 'United States', percentage: 24.9, color: '#EF4444' },
+    { country: 'India', percentage: 41.0, color: '#F59E0B' },
+    { country: 'United States', percentage: 26.9, color: '#EF4444' },
     { country: 'South Africa', percentage: 12.5, color: '#10B981' },
     { country: 'Kuwait', percentage: 9.0, color: '#8B5CF6' },
     { country: 'United Kingdom', percentage: 5.7, color: '#06B6D4' },
@@ -62,15 +62,15 @@ const InsightsAudience = () => {
   // Content performance data
   const contentPerformance = [
     { type: 'Reels', views: 94.3, interactions: 97.2, color: '#F59E0B' },
-    { type: 'Stories', views: 42.7, interactions: 14.5, color: '#EF4444' },
-    { type: 'Posts', views: 8.1, interactions: 2.6, color: '#10B981' },
-    { type: 'Videos', views: 0.0, interactions: 0.1, color: '#8B5CF6' }
+    { type: 'Stories', views: 72.7, interactions: 64.5, color: '#EF4444' },
+    { type: 'Posts', views: 40.1, interactions: 34.6, color: '#10B981' },
+    { type: 'Videos', views: 20.0, interactions: 24.1, color: '#8B5CF6' }
   ];
 
   // Audience breakdown data
   const audienceData = [
-    { name: 'Non-Followers', value: 97.6, color: '#F59E0B' },
-    { name: 'Followers', value: 2.4, color: '#1F2937' }
+    { name: 'Non-Followers', value: 95.6, color: '#F59E0B' },
+    { name: 'Followers', value: 4.4, color: '#1F2937' }
   ];
 
   // Timeline data for trends
@@ -406,7 +406,7 @@ const InsightsAudience = () => {
                 </div>
                 <div className="text-center">
                   <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-2">
-                    97.6%
+                    95.6%
                   </div>
                   <div className="text-white font-semibold mb-1">Non-Follower Reach</div>
                   <div className="text-gray-400 text-sm">Organic discovery</div>

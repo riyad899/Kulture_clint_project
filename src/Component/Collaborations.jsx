@@ -123,11 +123,7 @@ const Collaborations = () => {
       title: 'Fashion-Forward Content Series',
       description: 'Create trending content that showcases your products in motion'
     },
-    {
-      icon: Zap,
-      title: 'Brand Story Movement',
-      description: 'Transform your brand message into compelling dance narratives'
-    }
+
   ];
 
   return (
@@ -188,7 +184,7 @@ const Collaborations = () => {
             </span>
           </h3>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
@@ -251,21 +247,11 @@ const Collaborations = () => {
                 <div className={`absolute inset-0 bg-gradient-to-br ${brand.color} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-300`}></div>
 
                 <div className="relative text-center">
-                  {/* Logo or Mock Logo Circle */}
-                  <div className={`w-16 h-16 mx-auto mb-3 rounded-full flex items-center justify-center border-2 border-transparent group-hover:border-yellow-400/30 transition-all duration-300 ${
-                    brand.logo ? 'bg-white p-2' : `bg-gradient-to-br ${brand.color}`
-                  }`}>
-                    {brand.logo ? (
-                      <img
-                        src={brand.logo}
-                        alt={`${brand.name} logo`}
-                        className="w-full h-full object-contain"
-                      />
-                    ) : (
-                      <span className="text-white font-black text-lg">
-                        {brand.name.charAt(0)}
-                      </span>
-                    )}
+                  {/* Brand Initial Circle */}
+                  <div className={`w-16 h-16 mx-auto mb-3 rounded-full flex items-center justify-center border-2 border-transparent group-hover:border-yellow-400/30 transition-all duration-300 bg-gradient-to-br ${brand.color}`}>
+                    <span className="text-white font-black text-lg">
+                      {brand.name.charAt(0)}
+                    </span>
                   </div>
 
                   {/* Brand Name */}
